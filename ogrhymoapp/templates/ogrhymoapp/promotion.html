@@ -1,0 +1,98 @@
+{% extends 'ogrhymoapp/base.html' %}
+
+{% load static %}
+
+{% block body %}
+  <!-- preloader start -->
+  <div class="preloader">
+    <div class="preloader-box">
+      <div>L</div>
+      <div>O</div>
+      <div>A</div>
+      <div>D</div>
+      <div>I</div>
+      <div>N</div>
+      <div>G</div>
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  {% include 'ogrhymoapp/header.html' %}
+
+  <!-- inner-page-banner-section start -->
+  <section class="inner-page-banner-section gradient-bg">
+    <div class="illustration-img"><img src="{% static 'images/inner-page-banner-illustrations/promotion.png' %}" alt="image-illustration"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="inner-page-content-area">
+                    <h2 class="page-title">Promotions</h2>
+                    <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#0">Pages</a></li>
+                            <li class="breadcrumb-item">Promotions</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- inner-page-banner-section end -->
+
+  <!-- bonus-section start -->
+  <div class="bonus-section mt-minus">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="bonus-thumb">
+            <a href="#0"><img src="{% static 'images/bonus.png' %}" alt="image"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bonus-section end -->
+
+  <!-- promotion-section start -->
+  <section class="promotion-section pt-120 pb-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="promotion-single">
+            <div class="thumb"><img src="{% static 'images/promotion/1.png' %}" alt="image"></div>
+            <div class="content">
+              <span class="subtitle">YOUR REFERRAL GIFT</span>
+              <h2 class="title">Be rewarded when you spread the word</h2>
+              <p>Invite your family and friends, our exclusive referral program for those important to you. Invite them for a complimentary financial consultation. You can look forward to a generous cash bonus.</p>
+              <a href="#0" class="btn btn-primary btn-hover text-small">read more</a>
+            </div>
+          </div><!-- promotion-single end -->
+          <div class="promotion-single">
+            <div class="thumb"><img src="{% static 'images/promotion/2.png' %}" alt="image"></div>
+            <div class="content">
+              <span class="subtitle">NEW FUNDS TOP-UP BONUS</span>
+              <h2 class="title">Get rewarded for any additional new funds</h2>
+              <p>Receive an attractive cash bonus whenever you bring in new funds and build your wealth with us.</p>
+              <a href="#0" class="btn btn-primary btn-hover text-small">read more</a>
+            </div>
+          </div><!-- promotion-single end -->
+          <div class="promotion-single">
+            <div class="thumb"><img src="{% static 'images/promotion/3.png' %}" alt="image"></div>
+            <div class="content">
+              <span class="subtitle">relationship BONUS</span>
+              <h2 class="title">Be rewarded for your Relationship with us</h2>
+              <p>Earn up to 30% more annual Relationship Bonus based on your relationship with us.</p>
+              <a href="#0" class="btn btn-primary btn-hover text-small">read more</a>
+            </div>
+          </div><!-- promotion-single end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- promotion-section end -->
+
+  {% endblock %}
+
+ 

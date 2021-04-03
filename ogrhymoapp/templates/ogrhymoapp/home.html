@@ -1,0 +1,900 @@
+{% extends 'ogrhymoapp/base.html' %}
+{% load static %}
+{% block body %}
+
+<!-- preloader start -->
+  <div class="preloader">
+    <div class="preloader-box">
+      <div>N</div>
+      <div>S</div>
+      <div>B</div>
+      <div>I</div>
+      <div>N</div>
+      <div>V</div>
+      <div>E</div>
+      <div>ST</div>
+    </div>
+  </div>
+  <!-- preloader end -->
+        {% include 'ogrhymoapp/header.html' %}
+
+  <!-- banner-section start -->
+  <section class="banner-section banner--two bg_img" data-background="{% static 'images/home2-bg.jpg' %}">
+    <div class="banner-elements-image anim-bounce-two"><img src="{% static 'images/elements/home2-banner.png' %}" alt="image"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="banner-content-area">
+            <div class="banner-content text-center">
+              <h4 class="banner-title" >WELCOME TO NSBINVESTMENT.</h4>
+              <h6 style="text-align: center;">NSBinvestment is a legally registered private limited company which was founded in 2019 in the UK.</h6>
+            </div>
+            <div class="banner-btn-area justify-content-center">
+              <a href="{% url 'signup' %}" class="btn btn-primary btn-round">get started now!</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- banner-section end -->
+
+  <!-- counter-section start -->
+  <div class="counter-sections">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="counter-area d-flex justify-content-between">
+            <div class="counter-item">
+              <div class="counter-icon">
+                <img src="{% static 'images/icons/counter/1.svg' %}" alt="icon">
+              </div>
+              <div class="counter-content">
+                <span>$</span>
+                <span class="counter">561</span>
+                <span>k</span>
+                <span class="caption">Invested in Stocks</span>
+              </div>
+            </div><!-- counter-item end -->
+            <div class="counter-item">
+              <div class="counter-icon">
+                <img src="{% static 'images/icons/counter/2.svg' %}" alt="icon">
+              </div>
+              <div class="counter-content">
+                <span class="counter">804</span>
+                <span class="caption">Registered Members</span>
+              </div>
+            </div><!-- counter-item end -->
+            <div class="counter-item">
+              <div class="counter-icon">
+                <img src="{% static 'images/icons/counter/3.svg' %}" alt="icon">
+              </div>
+              <div class="counter-content">
+                <span>$</span>
+                <span class="counter">5</span>
+                <span>k</span>
+                <span class="caption">Average Investment</span>
+              </div>
+            </div><!-- counter-item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- counter-section end -->
+
+  <!-- choose-us-section start -->
+  <section class="choose-us-section pt-120 pb-120 bg_img" data-background="{% static 'images/elements/choose-us-bg-shape.png' %}">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Earn a living.</span>
+            <h2 class="section-title">Why Should You Choose Us</h2>
+            <p>Our services gives you a better result and savings, as per your requirement and you can manage your investments from anywhere either from home or your work place at any time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row m-0">
+        <div class="col-lg-12 p-0">
+          <div class="choose-us-slider owl-carousel">
+              <div class="choose-item text-center">
+                <div class="choose-thumb">
+                  <img src="{% static 'images/choose-us/1.png' %}" alt="image">
+                </div>
+                <div class="choose-content">
+                  <h3 class="title">Fast Profit </h3>
+                  <p>We're talking about ways you can earn and have protected Investments.</p>
+                </div>
+              </div><!-- choose-item end -->
+              <div class="choose-item text-center">
+                <div class="choose-thumb">
+                  <img src="{% static 'images/choose-us/2.png' %}" alt="image">
+                </div>
+                <div class="choose-content">
+                  <h3 class="title">Instant Withdrawal</h3>
+                  <p>We’re excited to launch instant withdrawals. you can deposit and withdraw funds in just a few clicks.</p>
+                </div>
+              </div><!-- choose-item end -->
+              <div class="choose-item text-center">
+                <div class="choose-thumb">
+                  <img src="{% static 'images/choose-us/3.png' %}" alt="image">
+                </div>
+                <div class="choose-content">
+                  <h3 class="title">Dedicated Server</h3>
+                  <p>Dedicated server hosting with 100% guaranteed network uptime.There's no sharing of CPU time, RAM or bandwidth</p>
+                </div>
+              </div><!-- choose-item end -->
+              <div class="choose-item text-center">
+                <div class="choose-thumb">
+                  <img src="{% static 'images/choose-us/4.png' %}" alt="image">
+                </div>
+                <div class="choose-content">
+                  <h3 class="title">DDoS Protection</h3>
+                  <p>To protect your resources from modern DDoS attacks is through a multi-layer deployment of purpose-built DDoS mitigation </p>
+                </div>
+              </div><!-- choose-item end -->
+              <div class="choose-item text-center">
+                <div class="choose-thumb">
+                  <img src="{% static 'images/choose-us/5.png' %}" alt="image">
+                </div>
+                <div class="choose-content">
+                  <h3 class="title">24/7 Support</h3>
+                  <p>Our Technical Support team is available for any questions. Our  multilingual 24/7 support allows to keep in touch.</p>
+                </div>
+              </div><!-- choose-item end -->
+              <div class="choose-item text-center">
+                <div class="choose-thumb">
+                  <img src="{% static 'images/choose-us/1.png' %}" alt="image">
+                </div>
+                <div class="choose-content">
+                  <h3 class="title">Stable Income</h3>
+                  <p>Ever thought of an income stream that just grows everyday? well you can achieve that with Avalanche Capitals.</p>
+                </div>
+              </div><!-- choose-item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- choose-us-section end -->
+
+  <!-- features-section start -->
+  <section class="features-section pt-120 pb-xl-120">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Our Amazing Features</span>
+            <h2 class="section-title">Investing For Everyone</h2>
+            <p>We are worldwide investment company who are committed to the principle of revenue maximization and reduction of the financial risks at investing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="feature-thumb wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+            <img src="{% static 'images/elements/features.png' %}" alt="image">
+          </div>
+        </div>
+        <div class="col-xl-4 offset-md-1">
+          <div class="feature-item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="{% static 'images/icons/investment/1.svg' %}" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Sign up in minutes</h3>
+              <p>Open an investment account in minutes and get started with even the basic plan.</p>
+              <a href="{% url 'signup' %}">get strated</a>
+            </div>
+          </div><!-- feature-item end -->
+          <div class="feature-item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="{% static 'images/icons/investment/2.svg' %}" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Investing Made Easy</h3>
+              <p>Choose from three simple starting option - cautious , balanced & adventurous.We’ll take care of the rest!</p>
+            </div>
+          </div><!-- feature-item end -->
+          <div class="feature-item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.7s">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="{% static 'images/icons/investment/3.svg' %}" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Build Your Porfolio</h3>
+              <p>We’ll help you pick an investment strategy that reflects your interests,beliefs and goals.</p>
+            </div>
+          </div><!-- feature-item end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- features-section end -->
+
+  <!-- invest-section start -->
+  <section class="invest-section pt-120 pb-120 bg_img" data-background="{% static 'images/bg-1.png' %}">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="section-header text-center text-white">
+            <span class="section-subtitle">The smarter way to invest!</span>
+            <h2 class="section-title">Start investing! It’s never too late</h2>
+            <p>Make sound investment decisions with the help of our research & analytical assets.  You may make additional deposits at any time. All our payments are instant payments.</p>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- invest-section end -->
+
+  <!-- offer-section start -->
+  <section class="offer-section pt-120 pb-120 bg_img" data-background="{% static 'images/offer-bg.png' %}">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+            <span class="section-subtitle">Our mission is to help our User</span>
+            <h2 class="section-title">To Maximize Money</h2>
+            <a href="#0" class="btn btn-primary btn-hover text-small mt-30">what we offer</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="offer-slider owl-carousel">
+            <div class="offer-item">
+              <div class="icon">
+                <img src="{% static 'images/icons/offer/1.svg' %}" alt="icon">
+              </div>
+              <div class="content">
+                <h3 class="title">smart deposit</h3>
+                <p>Best way to put your idle money to work.</p>
+              </div>
+            </div><!-- offer-item end -->
+            <div class="offer-item">
+              <div class="icon">
+                <img src="{% static 'images/icons/offer/2.svg' %}" alt="icon">
+              </div>
+              <div class="content">
+                <h3 class="title">One - Tap Invest</h3>
+                <p>Invest without net baning/debit card.</p>
+              </div>
+            </div><!-- offer-item end -->
+            <div class="offer-item">
+              <div class="icon">
+                <img src="{% static 'images/icons/offer/3.svg' %}" alt="icon">
+              </div>
+              <div class="content">
+                <h3 class="title">INVEST</h3>
+                <p>On a budget? Well you can start with our minimum offer.</p>
+              </div>
+            </div><!-- offer-item end -->
+            <div class="offer-item">
+              <div class="icon">
+                <img src="{% static 'images/icons/offer/1.svg' %}" alt="icon">
+              </div>
+              <div class="content">
+                <h3 class="title">smart deposit</h3>
+                <p>Best way to put your idle money to work.</p>
+              </div>
+            </div><!-- offer-item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- offer-section end -->
+
+  <!-- calculate-profit-section start -->
+  <section class="calculate-profit-section pt-120 pb-120">
+    <div class="bg_img" data-background="{% static 'images/invest-plan.jpg' %}"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center text-white">
+            <span class="section-subtitle">Calculate the amazing profits</span>
+            <h2 class="section-title">You Can Earn</h2>
+            <p>Find out what the returns on your current investments will be valued at. All our issuers have an obligation to pay dividends for first year regardless so your investments are 100% secured.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="calculate-area wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+            <ul class="nav nav-tabs justify-content-around" id="calculatorTab" role="tablist">
+              <li>
+                <div class="icon"><img src="{% static 'images/icons/invest-calculate/1.svg' %}" alt="icon-image"></div>
+                <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$500- $5,000 daily</h6>
+                <h6 class="package-name">fee: $50,000 </h6>
+                <span class="percentage">Daily</span>
+                <a class="active" id="basic-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="basic" aria-selected="true">24 HOURS</a>
+              </li>
+              <li>
+                  <div class="icon"><img src="{% static 'images/icons/invest-calculate/2.svg' %}" alt="icon-image"></div>
+                  <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$5,001- $10,000</h6>
+                <h6 class="package-name">fee: $100,000</h6>
+                  <span class="percentage">Daily</span>
+                <a id="satandard-tab" data-toggle="tab" href="#satandard" role="tab" aria-controls="satandard" aria-selected="false">24 HOURS</a>
+              </li>
+              <li>
+                  <div class="icon"><img src="{% static 'images/icons/invest-calculate/3.svg' %}" alt="icon-image"></div>
+                  <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$10,001- $20,000</h6>
+                <h6 class="package-name">fee: $150,000</h6>
+                  <span class="percentage">Daily</span>
+                <a id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="false">24 HOURS</a>
+              </li>
+             <li>
+                  <div class="icon"><img src="{% static 'images/icons/invest-calculate/3.svg' %}" alt="icon-image"></div>
+                  <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$21,000- $50,000</h6>
+                <h6 class="package-name">fee: $200,000</h6>
+                  <span class="percentage">Daily</span>
+                <a id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="false">24 HOURS</a>
+              </li>
+            </ul>
+
+                </div><!-- plan-amount-calculate end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- calculate-profit-section end -->
+
+  <!-- deposit-withdraw-section start -->
+  <section class="deposit-withdraw-section pt-120 pb-120">
+    <div class="circle-object"><img src="{% static 'images/elements/deposit-circle-shape.png' %}" alt="image"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Convenient money</span>
+            <h2 class="section-title">Deposit & Withdrawal</h2>
+            <p>Depositing or withdrawing money is simple. We support several payment methods, which depends on what country your payment account is located in.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="dep-wth-option-area wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+            <span class="circle three"></span>
+            <span class="circle four"></span>
+            <a href="#0" class="card-item">
+              <span class="icon"><img src="{% static 'images/icons/payment-option/card.svg' %}" alt="image"></span>
+              <span class="caption">Credit Card</span>
+            </a><!-- card-item end -->
+            <a href="#0" class="card-item">
+              <span class="icon"><img src="{% static 'images/icons/payment-option/paypal.svg' %}" alt="image"></span>
+              <span class="caption">Credit Card</span>
+            </a><!-- card-item end -->
+            <a href="#0" class="card-item">
+              <span class="icon"><img src="{% static 'images/icons/payment-option/bitcoin.svg' %}" alt="image"></span>
+              <span class="caption">Credit Card</span>
+            </a><!-- card-item end -->
+            <a href="#0" class="card-item">
+              <span class="icon"><img src="{% static 'images/icons/payment-option/litecoin.svg' %}" alt="image"></span>
+              <span class="caption">Credit Card</span>
+            </a><!-- card-item end -->
+            <a href="#0" class="card-item">
+              <span class="icon"><img src="{% static 'images/icons/payment-option/ethereum.svg' %}" alt="image"></span>
+              <span class="caption">Credit Card</span>
+            </a><!-- card-item end -->
+            <a href="#0" class="card-item">
+              <span class="icon"><img src="{% static 'images/icons/payment-option/ripple.svg' %}" alt="image"></span>
+              <span class="caption">Credit Card</span>
+            </a><!-- card-item end -->
+            <a href="#0" class="text-btn">view all option</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="{% static 'images/icons/payment-option/ft1.svg' %}" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">No Limits</h3>
+              <p>Unlimited maximum withdrawal amount</p>
+            </div>
+          </div><!-- feature-item end -->
+          <div class="feature-item">
+            <div class="icon">
+              <div class="icon-inner">
+                <img src="{% static 'images/icons/payment-option/ft2.svg' %}" alt="icon">
+              </div>
+            </div>
+            <div class="content">
+              <h3 class="title">Withdrawal in 24 /7</h3>
+              <p>Deposit – instantaneous</p>
+            </div>
+          </div><!-- feature-item end -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- deposit-withdraw-section end -->
+
+  <!-- community-section start -->
+  <section class="community-section bg_img pt-lg-120" data-background="{% static 'images/community-bg.png' %}">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="section-header text-center text-white wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+            <span class="section-subtitle">We support</span>
+            <h2 class="section-title">Cryptocurrency Community</h2>
+            <p>Access a world of dynamic investment opportunities, buy into businesses you believe in and share in their  success.You may make additional deposits at any time. All our
+              payments are instant payments.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="community-wrapper">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="community-item">
+                  <div class="icon">
+                    <img src="{% static 'images/icons/community/1.svg' %}" alt="image">
+                  </div>
+                  <div class="content">
+                    <h3 class="title">Simplicity</h3>
+                    <p>We’re eliminating complex user experiences.</p>
+                    <a href="#0" class="read-more-btn">read more<i class="icofont-long-arrow-right"></i></a>
+                  </div>
+                </div><!-- community-item end -->
+                <div class="community-item">
+                  <div class="icon">
+                    <img src="{% static 'images/icons/community/2.svg' %}" alt="image">
+                  </div>
+                  <div class="content">
+                    <h3 class="title">security</h3>
+                    <p>Enhanced security features like multi-factor </p>
+                    <a href="#0" class="read-more-btn">read more<i class="icofont-long-arrow-right"></i></a>
+                  </div>
+                </div><!-- community-item end -->
+                <div class="community-item">
+                  <div class="icon">
+                    <img src="{% static 'images/icons/community/3.svg' %}" alt="image">
+                  </div>
+                  <div class="content">
+                    <h3 class="title">support</h3>
+                    <p>Get all the support you need for your Investment</p>
+                    <a href="#0" class="read-more-btn">read more<i class="icofont-long-arrow-right"></i></a>
+                  </div>
+                </div><!-- community-item end -->
+              </div>
+              <div class="col-lg-5">
+                <div class="user-wrapper">
+                  <div class="icon">
+                    <img src="{% static 'images/icons/community/user-icon.svg' %}" alt="image">
+                  </div>
+                  <span class="caption">18000+ Users</span>
+                  <div class="users-area">
+                    <span class="user-img"><img src="{% static 'images/users/s1.png' %}" alt="image"></span>
+                    <span class="user-img"><img src="{% static 'images/users/s2.png' %}" alt="image"></span>
+                    <span class="user-img"><img src="{% static 'images/users/s3.png' %}" alt="image"></span>
+                    <span class="user-img"><img src="{% static 'images/users/s4.png' %}" alt="image"></span>
+                    <span class="user-img"><img src="{% static 'images/users/s5.png' %}" alt="image"></span>
+                    <span class="user-img"><img src="{% static 'images/users/s6.png' %}" alt="image"></span>
+                    <span class="user-img"><img src="{% static 'images/users/s7.png' %}" alt="image"></span>
+                  </div>
+                </div>
+                <div class="btn-area text-center">
+                  <a href="{% url 'signup' %}" class="btn btn-secondary">join us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- community-section end -->
+
+  <!-- latest-transaction-section start -->
+  <section class="latest-transaction-section pt-120 pb-120">
+    <div class="elemets-bg" data-paroller-factor="-0.2" data-paroller-type="foreground" data-paroller-direction="vertical"><img src="{% static 'images/withdraw-bg.png' %}" alt=""></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Need Help?</span>
+            <h2 class="section-title">Talk to our support</h2>
+            <p>Should you encounter an issue pertaining anything, our support team is here for you 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- latest-transaction-section end -->
+
+  <!-- affiliate-features-section start -->
+  <section class="affiliate-features-section pt-120 pb-120">
+    <div class="shape"><img src="{% static 'images/elements/affiliate-shape.png' %}" alt="image"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="affiliate-features-content text-xl-left text-center">
+            <div class="section-header">
+              <span class="section-subtitle">Earn securely</span>
+              <h2 class="section-title">Referral Program</h2>
+              <p>Our referral program can increase your income by receiving a 5% percentage profit made by your referrals. </p>
+            </div>
+            <p>Invite others to join our fast growing company. After registration they will be your referrals and on making profits, you also earn.</p>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="row mb-none-30">
+            <div class="col-xl-6 col-lg-4 col-md-6">
+              <div class="affiliate-features-item text-center mb-30">
+                <div class="icon"><img src="{% static 'images/icons/affiliate-features/1.svg' %}" alt="image"></div>
+                <span class="subtitle">Enjoy unlimited</span>
+                <h3 class="title">Commissions</h3>
+                <p>Enjoy unlimited commissions on the referrals you make.</p>
+              </div>
+            </div><!-- affiliate-features-item end -->
+            <div class="col-xl-6 col-lg-4 col-md-6">
+              <div class="affiliate-features-item text-center mb-30">
+                <div class="icon"><img src="{% static 'images/icons/affiliate-features/2.svg' %}" alt="image"></div>
+                <span class="subtitle">Extra Bonus and</span>
+                <h3 class="title">Promotions</h3>
+                <p>Boost your monthly earnings with additional promotional opportunities.</p>
+              </div>
+            </div><!-- affiliate-features-item end -->
+            <div class="col-xl-6 col-lg-4 col-md-6">
+              <div class="affiliate-features-item text-center mb-30">
+                <div class="icon"><img src="{% static 'images/icons/affiliate-features/3.svg' %}" alt="image"></div>
+                <span class="subtitle">Get top notch</span>
+                <h3 class="title">Support</h3>
+                <p>Our support team is the fastest in the world. Do not hesitate to contact us.</p>
+              </div>
+            </div><!-- affiliate-features-item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- affiliate-features-section end -->
+
+  <!-- testimonial-section start -->
+  <section class="testimonial-section pt-xl-120 pb-120">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Testimonials</span>
+            <h2 class="section-title">Over 7,000 Happy Customers</h2>
+            <p>We have many happy investors invest with us. Some impresions from our Customers!  PLease read some of our lovely reviews from happy investors.</p>
+            <div class="btn-area">
+              <a href="{% url 'signup' %}" class="btn btn-primary text-small">join us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="testimonial-wrapper style--one d-lg-flex flex-wrap justify-content-between d-none">
+            <div class="testimonial-single">
+              <div class="thumb">
+                <img src="{% static 'images/testimonial/1.png' %}" alt="image">
+              </div>
+              <div class="details text-center">
+                <p>Great service! I have been worried about investing. But when I came here. I don't have to worry anymore</p>
+                <h4 class="name">Joy Kelley</h4>
+                <span class="client-details">United kingdom, 28th April,2019</span>
+                <span class="arrow-wrap"><span class="arrow"></span></span>
+              </div>
+            </div><!-- testimonial-single end -->
+            <div class="testimonial-single">
+              <div class="thumb">
+                <img src="{% static 'images/testimonial/2.png' %}" alt="image">
+              </div>
+              <div class="details text-center">
+                <p>Awesome journey! Although I started with the basic plan, NSB investments has grown my earnings to surpass my montly income</p>
+                <h4 class="name">Kevin</h4>
+                <span class="client-details">United kingdom, 5th March,2017</span>
+                <span class="arrow-wrap"><span class="arrow"></span></span>
+              </div>
+            </div><!-- testimonial-single end -->
+            <div class="testimonial-single">
+              <div class="thumb">
+                <img src="{% static 'images/testimonial/3.png' %}" alt="image">
+              </div>
+              <div class="details text-center">
+                <p>The best investment one can ever make! For once I never regretted investing in NSB investments. I am really enjoying the returns they make and hoping to invest more in the nearest future.</p>
+                <h4 class="name">Peter</h4>
+                <span class="client-details">United States, 3rd January,2021</span>
+                <span class="arrow-wrap"><span class="arrow"></span></span>
+              </div>
+            </div><!-- testimonial-single end -->
+            <div class="testimonial-single active">
+              <div class="thumb">
+                <img src="{% static 'images/testimonial/4.png' %}" alt="image">
+              </div>
+              <div class="details text-center">
+                <p>NSB investments saved my life. I invested a while before covid-19 hit Spain, in no time I was out of a job and no money. NSB investments came through for me and my family was able to survive without acquiring loans or borrowing from friends.</p>
+                <h4 class="name">Dora</h4>
+                <span class="client-details">Spain, 14th October,2020</span>
+                <span class="arrow-wrap"><span class="arrow"></span></span>
+              </div>
+            </div><!-- testimonial-single end -->
+            <div class="testimonial-single">
+              <div class="thumb">
+                <img src="{% static 'images/testimonial/5.png' %}" alt="image">
+              </div>
+              <div class="details text-center">
+                <p>I was surprised. The day I made my withdrawal was the most awesome day of my life. I am going to keep on Investing with them till forever.</p>
+                <h4 class="name">Alex</h4>
+                <span class="client-details">United kingdom, 30th August,2016</span>
+                <span class="arrow-wrap"><span class="arrow"></span></span>
+              </div>
+            </div><!-- testimonial-single end -->
+            <div class="testimonial-single">
+              <div class="thumb">
+                <img src="{% static 'images/testimonial/6.png' %}" alt="image">
+              </div>
+              <div class="details text-center">
+                <p>My college degree was made possible! When I first recognised a platform where I didn't have to refer anybody to make money, all I just needed was to invest and wait for returns with zero risk. In just a short while, from my earnings I was able to generate money for college.</p>
+                <h4 class="name">Joy</h4>
+                <span class="client-details">South Africa, 2nd May,2019</span>
+                <span class="arrow-wrap"><span class="arrow"></span></span>
+              </div>
+            </div><!-- testimonial-single end -->
+          </div>
+          <div class="testmonial-slider-wrapper d-lg-none mb-4">
+            <div class="testimonial-slider owl-carousel">
+              <div class="testimonial-single-two">
+                <div class="thumb"><img src="{% static 'images/testimonial/2.png' %}" alt="image"></div>
+                <h4 class="name">Kevin Ivanov</h4>
+                <span class="designation">Award winning blogger</span>
+                <p>NSB investments has one of the friendliest affiliate programs.They’re definitely one of the best investment website in the world. I’ve been using them for a long time and have never had any problems</p>
+              </div><!-- testimonial-single-two end -->
+              <div class="testimonial-single-two">
+                <div class="thumb"><img src="{% static 'images/testimonial/3.png' %}" alt="image"></div>
+                <h4 class="name">Danielle Durbin</h4>
+                <span class="designation">Luxury lifestyle made possible.</span>
+                <p>I enjoy every decision I made investing with NSB investments up until today. I can travel where ever and whenever I want. </p>
+              </div><!-- testimonial-single-two end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial-section end -->
+
+  <!-- investors-section start -->
+  <section class="investors-section pt-120 pb-120">
+    <div class="bg-shape bg_img" data-background="{% static 'images/investor-bg.png' %}"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8">
+          <div class="section-header text-white wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+            <span class="section-subtitle">Take a look at our</span>
+            <h2 class="section-title">Top 10 Investors</h2>
+            <p>A look at the top ten investors of all time and the strategies they used to make their money.</p>
+          </div>
+        </div>
+      </div>
+      <div class="investor-slider owl-carousel">
+        <div class="investor-item text-center">
+          <div class="thumb">
+            <img src="{% static 'images/investors/1.png' %}" alt="image">
+          </div>
+          <div class="content">
+            <h4 class="name"><a href="#0">Sean Obrien</a></h4>
+            <span class="amount">$50,000.00</span>
+            <p>Paid by <img src="{% static 'images/icons/withdraw/bitcoin.png' %}" alt="icon"></p>
+          </div>
+        </div><!-- investor-item end -->
+        <div class="investor-item text-center">
+          <div class="thumb">
+            <img src="{% static 'images/investors/2.png' %}" alt="image">
+            <a href="#0" class="icon"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="content">
+            <h4 class="name"><a href="#0">Naomi White</a></h4>
+            <span class="amount">$43,500.00</span>
+            <p>Paid by <img src="{% static 'images/icons/withdraw/bitcoin.png' %}" alt="icon"></p>
+          </div>
+        </div><!-- investor-item end -->
+        <div class="investor-item text-center">
+          <div class="thumb">
+            <img src="{% static 'images/investors/3.png' %}" alt="image">
+            <a href="#0" class="icon"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="content">
+            <h4 class="name"><a href="#0">Tom Barker</a></h4>
+            <span class="amount">$42,000.00</span>
+            <p>Paid by <img src="{% static 'images/icons/withdraw/bitcoin.png' %}" alt="icon"></p>
+          </div>
+        </div><!-- investor-item end -->
+        <div class="investor-item text-center">
+          <div class="thumb">
+            <img src="{% static 'images/investors/1.png' %}" alt="image">
+            <a href="#0" class="icon"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="content">
+            <h4 class="name"><a href="#0">Sean Obrien</a></h4>
+            <span class="amount">$50,000.00</span>
+            <p>Paid by <img src="{% static 'images/icons/withdraw/bitcoin.png' %}" alt="icon"></p>
+          </div>
+        </div><!-- investor-item end -->
+      </div>
+    </div>
+  </section>
+  <!-- investors-section end -->
+
+  <!-- contest-winner-section start  -->
+  <section class="contest-winner-section pt-120 pb-120">
+    <div class="shape"><img src="{% static 'images/elements/contest-shape.png' %}" alt="image"></div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-xl-6 col-lg-6">
+          <div class="contest-winner-content">
+            <div class="section-header text-lg-left text-center">
+              <span class="section-subtitle">Take a look at our</span>
+              <h2 class="section-title">Investment Principles</h2>
+              <p>Our goal is to maximize investor return and minimize any potential loss by applying these principles in a disciplined and pragmatic process. We rely on facts not speculation to purchase high return, predictable investments at significant discounts to intrinsic values</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="contest-winner-slider owl-carousel">
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="{% static 'images/contest-winner/1.png' %}" alt="image">
+                <span class="icon"><img src="{% static 'images/icons/contest-winner/trophy.svg' %}" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="{% static 'images/contest-winner/1.png' %}" alt="image">
+                <span class="icon"><img src="{% static 'images/icons/contest-winner/trophy.svg' %}" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="{% static 'images/contest-winner/1.png' %}" alt="image">
+                <span class="icon"><img src="{% static 'images/icons/contest-winner/trophy.svg' %}" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="{% static 'images/contest-winner/1.png' %}" alt="image">
+                <span class="icon"><img src="{% static 'images/icons/contest-winner/trophy.svg' %}" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="{% static 'images/contest-winner/1.png' %}" alt="image">
+                <span class="icon"><img src="{% static 'images/icons/contest-winner/trophy.svg' %}" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contest-winner-section end  -->
+
+  <!-- partner-section start -->
+  <section class="partner-section pt-lg-120 pb-120">
+        <div class="col-lg-6">
+          <div class="section-header text-lg-left text-center">
+            <span class="section-subtitle">Why invest with NSB investments?</span>
+            <h2 class="section-title">We are simply the best.</h2>
+            <p>We’re committed to making our clients successful by becoming their partners and trusted advisors . NSB investments believes in being your trusted partner and earning that trust through confidence and performance in service and support.</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary text-small">join with us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partner-section end -->
+
+        <h2 style='text-align:center;'>Our services</h2>
+        <div class="row mt-4 mb-none-30 investment-item-area">
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="{% static 'images/icons/about/crypto.jpg' %}">
+                    <div class="icon"><img src="{% static 'images/icons/investment/1.png' %}" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Crypto currency investment</h3>
+                      <p>This is becoming the "New Money" in the finance industry, making waves and amazing returns on invested capital.</p>
+                    </div>
+                    <div class="right">
+                      <a href="{% url 'loginpage' %}" class="btn btn-primary btn-hover text-small">invest now</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="{% static 'images/icons/about/forex1.jpg' %}">
+                    <div class="icon"><img src="{% static 'images/icons/investment/2.png' %}" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Forex trading</h3>
+                      <p>With the Meta Trader 5 trading software, this sector has remained innovative and profitable over the years.</p>
+                      </div>
+                    <div class="right">
+                      <a href="{% url 'loginpage' %}" class="btn btn-primary btn-hover text-small">invest now</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+            </div>
+         <div class="row mt-4 mb-none-30 investment-item-area">
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="{% static 'images/icons/about/stock.jpg' %}">
+                    <div class="icon"><img src="{% static 'images/icons/investment/1.png' %}" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Stocks and Commodities investments.</h3>
+                      <p>These markets allow sales and purchases of stocks and other financial products such as commodities and futures.</p>
+                    </div>
+                    <div class="right">
+                      <a href="{% url 'loginpage' %}" class="btn btn-primary btn-hover text-small">invest now</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="{% static 'images/icons/about/real-estate2.jpg' %}">
+                    <div class="icon"><img src="{% static 'images/icons/investment/2.png' %}" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Real Estate Investment</h3>
+                      <p>Real estate investing, even on a very small scale, remains a tried and true means of building an individual's cash flow and wealth.</p>
+                      </div>
+                    <div class="right">
+                      <a href="{% url 'loginpage' %}" class="btn btn-primary btn-hover text-small">invest now</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+            </div>
+
+
+
+{% endblock %}

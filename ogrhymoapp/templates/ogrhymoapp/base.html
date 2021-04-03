@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <title>NSBINVESTMENTS</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/icofont.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/lightcase.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+</head>
+<!-- Begin of Chaport Live Chat code -->
+<script type="text/javascript">
+(function(w,d,v3){
+w.chaportConfig = {
+  appId : '6059c2bc862e8a6187018f9d'
+};
+
+if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+</script>
+<!-- End of Chaport Live Chat code -->
+<body>
+  {% block body %}
+
+  {% endblock %}
+
+  {% include 'ogrhymoapp/footer.html' %}
+
+ <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.nice-select.js' %}"></script>
+  <script src="{% static 'js/lightcase.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.countup.min.js' %}"></script>
+  <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

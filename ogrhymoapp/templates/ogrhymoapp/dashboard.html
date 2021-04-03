@@ -1,0 +1,443 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>NSB INVESTMENT</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+        <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/jquery-ui/jquery-ui.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/jquery-ui/jquery-ui.theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/simple-line-icons/css/simple-line-icons.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/flags-icon/css/flag-icon.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/flag-select/css/flags.css' %}">
+
+
+
+        <link rel="stylesheet"  href="{% static 'vendors/chartjs/Chart.min.css' %}">
+
+
+
+        <link rel="stylesheet" href="{% static 'vendors/morris/morris.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/weather-icons/css/pe-icon-set-weather.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/chartjs/Chart.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/starrr/starrr.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/ionicons/css/ionicons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.css' %}">
+
+          <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/icofont.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/lightcase.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+
+
+        <link rel="stylesheet" href="{% static 'css/dashboard_css/main.css' %}">
+
+    </head>
+
+
+    <!-- START: Body-->
+    <body id="main-container" class="default">
+
+        <!-- START: Pre Loader-->
+
+        <div class="se-pre-con">
+            <img src="{% static 'images/dashboard_images/logo.png' %}" alt="logo" width="23" class="img-fluid"/>
+
+        </div>
+
+        <!-- END: Pre Loader-->
+
+        <!-- START: Header-->
+        <div id="header-fix" class="header fixed-top">
+            <nav class="navbar navbar-expand-lg  p-0">
+                <div class="navbar-header h4 mb-0 align-self-center logo-bar text-center">
+                    <a href="" class="horizontal-logo text-center">
+                        <span class="h3 align-self-center mb-0 "></span>
+                    </a>
+                </div>
+                <div class="navbar-header h2 mb-0 text-center h-100 collapse-menu-bar">
+                    <a href="#" class="sidebarCollapse" id="collapse"><i class="icon-menu body-color"></i></a>
+                </div>
+
+                <form class="float-left d-none d-lg-block search-form">
+                    <div class="form-group mb-0 position-relative">
+                        <input type="text" class="form-control border-0 rounded bg-search pl-5" placeholder="Search anything...">
+                        <div class="btn-search position-absolute top-0">
+                            <a href="#"><i class="h5 icon-magnifier body-color"></i></a>
+                        </div>
+                        <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown" aria-expanded="false"><i class="icon-close h5"></i>
+                        </a>
+
+                    </div>
+                </form>
+                <div class="navbar-right ml-auto h-100">
+                    <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
+                        <li class="d-inline-block align-self-center  d-block d-lg-none">
+                            <a href="#" class="nav-link mobilesearch" data-toggle="dropdown" aria-expanded="false"><i class="icon-magnifier h4"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block align-self-center">
+                            <div id="options" data-input-name="country2"  data-selected-country="US"></div>
+                        </li>
+                        <li class="dropdown align-self-center">
+                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="icon-reload h4"></i>
+                                <span class="badge badge-default"> <span class="ring">
+                                    </span><span class="ring-point">
+                                    </span> </span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right border  py-0">
+                                <li>
+                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                        <div class="media">
+                                            <img src="{% static 'images/dashboard_images/author.jpg' %}" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                            <div class="media-body">
+                                                <h6 class="mb-0">Mark</h6>
+                                                <span class="text-warning">Contact your agent.</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li><a class="dropdown-item text-center py-2" href="#"> <strong>See All agents <i class="icon-arrow-right pl-2 small"></i></strong></a></li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown align-self-center d-inline-block">
+                            <ul class="dropdown-menu dropdown-menu-right border   py-0">
+                                <li>
+                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                        <div class="media">
+                                            <img src="{% static 'images/dashboard_images/author.jpg' %}" alt="" class="d-flex mr-3 img-fluid rounded-circle w-50">
+                                            <div class="media-body">
+                                                <h6 class="mb-0 text-success">We are exceptional</h6>
+                                                12 min ago
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li><a class="dropdown-item text-center py-2" href="#"> <strong>Start today <i class="icon-arrow-right pl-2 small"></i></strong></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- END: Header-->
+
+        <!-- START: Main Menu-->
+        <div class="sidebar">
+            <div class="media d-block text-center user-profile">
+                <div class="media-body text-center mt-0 color-primary mt-2">
+                        <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false">
+                            <h6 class="mb-0 font-weight-bold">{{customer.firstname}}</h6>
+                            {{customer.lastname}}
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right p-0" style="">
+                        <a href="{% url 'contact' %}" class="dropdown-item px-2 align-self-center d-flex">
+                                <span class="icon-pencil mr-2 h6 mb-0"></span> Contact us</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="{% url 'about' %}" class="dropdown-item px-2 align-self-center d-flex">
+                                <span class="icon-globe mr-2 h6 mb-0"></span> About</a>
+                            <a href="{% url 'logout' %}" class="dropdown-item px-2 text-danger align-self-center d-flex">
+                                <span class="icon-logout mr-2 h6  mb-0"></span> Sign Out</a>
+                        </div>
+                </div>
+            </div>
+
+            <!-- START: Menu-->
+            <ul id="side-menu" class="sidebar-menu">
+                <li class="dropdown active"><a href="{% url 'dashboard' %}">Dashboard</a>
+                    <ul>
+                        <li class="active"><a href=""><i class="icon-rocket"></i> Dashboard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Know more</a>
+                    <ul>
+                        <li><a href="{% url 'promotion' %}"><i class="icon-speech"></i> Promotions</a></li>
+                        <li><a href="{% url 'about' %}"><i class="icon-support"></i> About</a></li>
+                        <li><a href="{% url 'logout' %}"><i class="icon-login"></i> logout</a></li>
+                        <li><a href="{% url 'account_settings' %}"><i class="icon-support"></i> Account settings</a></li>
+                        <li><a href="{% url 'deposite' %}"><i class="icon-envelope"></i> Deposite</a></li>
+                        <li><a href="{% url 'requestwithdrawal' %}"><i class="icon-eye"></i> Request withdrawal</a></li>
+                        <li><a href="{% url 'deposite' %}"><i class="icon-support"></i> Deposite</a></li>
+                        <li><a href="{% url 'requestwithdrawal' %}"><i class="icon-support"></i>Request withdrawal </a></li>
+                        <li class="dropdown"><a href="#"><i class="icon-envelope"></i>Transactions</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'deposite' %}"><i class="icon-envelope"></i> Deposite</a></li>
+                                <li><a href="{% url 'requestwithdrawal' %}"><i class="icon-eye"></i> Request withdrawal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Pages</a>
+                    <ul>
+                        <li class="dropdown"><a href="#"><i class="icon-book-open"></i>Other Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'logout' %}"><i class="icon-login"></i> logout</a></li>
+                                <li><a href="{% url 'contact' %}"><i class="icon-wrench"></i> Contact us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- END: Menu-->
+        </div>
+        <!-- END: Main Menu-->
+
+        <!-- START: Main Content-->
+        <main>
+            <div class="container-fluid">
+                <!-- START: Breadcrumbs-->
+                <div class="row">
+                    <div class="col-12  align-self-center">
+                        <div class="sub-header mt-3 py-3 px-3 align-self-center d-sm-flex w-100 rounded">
+                            <div class="w-sm-100 mr-auto"><h4 class="mb-0">Dashboard</h4> <b>Hi, {{request.user.username}} Welcome to NSB investments.</b></div>
+
+                            <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
+                                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="breadcrumb-item active">Dashboard</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Breadcrumbs-->
+
+                <!-- START: Card Data-->
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class='d-flex px-0 px-lg-2 py-2 align-self-center'>
+                                    <span class="card-liner-icon mt-1">$</span>
+                                    <div class='card-liner-content'>
+                                        {% for investment in investments %}
+                                        <h2 class="card-liner-title">${{investment.withdrawal}}</h2>
+                                        {% endfor %}
+                                        <h6 class="card-liner-subtitle">Total withdrawal</h6>
+                                    </div>
+                                </div>
+                                <span class="bg-primary card-liner-absolute-icon text-white card-liner-small-tip"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class='d-flex px-0 px-lg-2 py-2 align-self-center'>
+                                    <span class="card-liner-icon mt-1">$</span>
+                                    <div class='card-liner-content'>
+                                        {% for investment in investments %}
+                                        <h2 class="card-liner-title">${{investment.totaldeposite}}</h2>
+                                        {% endfor %}
+                                        <h6 class="card-liner-subtitle">Non-spendable deposited</h6>
+                                    </div>
+                                </div>
+                                <span class="bg-primary card-liner-absolute-icon text-white card-liner-small-tip">+4.8%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class='d-flex px-0 px-lg-2 py-2 align-self-center'>
+                                    <span class="card-liner-icon mt-1">$</span>
+                                    <div class='card-liner-content'>
+                                        {% for investment in investments %}
+                                        <h2 class="card-liner-title">${{investment.deposite}}</h2>
+                                        {% endfor %}
+                                        <h6 class="card-liner-subtitle">Active deposite</h6>
+                                    </div>
+                                </div>
+                                <span class="bg-primary card-liner-absolute-icon text-white card-liner-small-tip">+4.8%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class='d-flex px-0 px-lg-2 py-2 align-self-center'>
+                                    <span class="card-liner-icon mt-1">$</span>
+                                    <div class='card-liner-content'>
+                                        {% for investment in investments %}
+                                        <h2 class="card-liner-title">${{investment.balance}}</h2>
+                                        {% endfor %}
+                                        <h6 class="card-liner-subtitle">Your balance</h6>
+                                    </div>
+                                </div>
+                                <i class="icon-refresh icons card-liner-absolute-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class='d-flex px-0 px-lg-2 py-2 align-self-center'>
+                                    <span class="card-liner-icon mt-1">$</span>
+                                    <div class='card-liner-content'>
+                                        {% for investment in investments %}
+                                        <h2 class="card-liner-title">${{investment.profit}}</h2>
+                                        {% endfor %}
+                                        <h6 class="card-liner-subtitle">Your Profit</h6>
+                                    </div>
+                                </div>
+                                <i class="icon-options icons card-liner-absolute-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <!-- END: Card DATA-->
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <h3 class="package-name">Our withdrawal packages.</h3>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+
+    <div class="row">
+ <div class="col-lg-12">
+          <div class="calculate-area wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+            <ul class="nav nav-tabs justify-content-around" id="calculatorTab" role="tablist">
+                <li>
+                <div class="icon"><img src="{% static 'images/icons/invest-calculate/1.svg' %}" alt="icon-image"></div>
+                <h5 class="package-name">DEFAULT WITHDRAWAL</h5>
+                <h6 class="package-name">$50 daily</h6>
+                <h6 class="package-name">fee: $0 </h6>
+                <span class="percentage">Daily</span>
+                <a class="active" id="basic-tab" href="" role="tab" aria-controls="basic" aria-selected="true">24 HOURS</a>
+              </li>
+              <li>
+                <div class="icon"><img src="{% static 'images/icons/invest-calculate/1.svg' %}" alt="icon-image"></div>
+                <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$500- $5,000 daily</h6>
+                <h6 class="package-name">fee: $50,000 </h6>
+                <span class="percentage">Daily</span>
+                <a class="active" id="basic-tab" href="{% url 'deposite' %}" role="tab" aria-controls="basic" aria-selected="true">BUY NOW!</a>
+              </li>
+              <li>
+                  <div class="icon"><img src="{% static 'images/icons/invest-calculate/2.svg' %}" alt="icon-image"></div>
+                  <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$5,001- $10,000</h6>
+                <h6 class="package-name">fee: $100,000</h6>
+                  <span class="percentage">Daily</span>
+                <a id="satandard-tab" href="{% url 'deposite' %}" role="tab" aria-controls="satandard" aria-selected="false">BUY NOW!</a>
+              </li>
+              <li>
+                  <div class="icon"><img src="{% static 'images/icons/invest-calculate/3.svg' %}" alt="icon-image"></div>
+                  <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$10,001- $20,000</h6>
+                <h6 class="package-name">fee: $150,000</h6>
+                  <span class="percentage">Daily</span>
+                <a id="premium-tab" href="{% url 'deposite' %}" role="tab" aria-controls="premium" aria-selected="false">BUY NOW!</a>
+              </li>
+             <li>
+                  <div class="icon"><img src="{% static 'images/icons/invest-calculate/3.svg' %}" alt="icon-image"></div>
+                  <h5 class="package-name">TO WITHDRAW</h5>
+                <h6 class="package-name">$21,000- $50,000</h6>
+                <h6 class="package-name">fee: $200,000</h6>
+                  <span class="percentage">Daily</span>
+                <a id="premium-tab" href="{% url 'deposite' %}" role="tab" aria-controls="premium" aria-selected="false">BUY NOW!</a>
+              </li>
+            </ul>
+
+                </div><!-- plan-amount-calculate end -->
+
+            </div>
+          </div>
+        </div>
+            </div>
+        </main>
+        <!-- END: Content-->
+
+
+
+        <!-- START: Back to top-->
+        <a href="#" class="scrollup text-center">
+            <i class="icon-arrow-up"></i>
+        </a>
+        <!-- END: Back to top-->
+
+
+
+        <!-- START: Template JS-->
+        <script src="{% static 'vendors/jquery/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'vendors/moment/moment.js' %}"></script>
+        <script src="{% static 'vendors/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'vendors/slimscroll/jquery.slimscroll.min.js' %}"></script>
+        <script src="{% static 'vendors/flag-select/js/jquery.flagstrap.min.js' %}"></script>
+        <!-- END: Template JS-->
+
+        <!-- START: APP JS-->
+        <script src="{% static 'js/dashboard_js/app.js' %}"></script>
+        <!-- END: APP JS-->
+
+        <!-- START: Page Vendor JS-->
+        <script src="{% static 'vendors/raphael/raphael.min.js' %}"></script>
+        <script src="{% static 'vendors/morris/morris.min.js' %}"></script>
+        <script src="{% static 'vendors/chartjs/Chart.min.js' %}"></script>
+        <script src="{% static 'vendors/starrr/starrr.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.canvaswrapper.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.colorhelpers.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.flot.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.flot.saturated.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.flot.browser.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.flot.drawSeries.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.flot.uiConstants.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.flot.legend.js' %}"></script>
+        <script src="{% static 'vendors/jquery-flot/jquery.flot.pie.js' %}"></script>
+        <script src="{% static 'vendors/chartjs/Chart.min.js' %}"></script>
+        <script src="{% static 'vendors/jquery-jvectormap/jquery-jvectormap-2.0.3.min.js' %}"></script>
+        <script src="{% static 'vendors/jquery-jvectormap/jquery-jvectormap-world-mill.js' %}"></script>
+        <script src="{% static 'vendors/jquery-jvectormap/jquery-jvectormap-de-merc.js' %}"></script>
+        <script src="{% static 'vendors/jquery-jvectormap/jquery-jvectormap-us-aea.js' %}"></script>
+        <!-- END: Page Vendor JS-->
+
+         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.nice-select.js' %}"></script>
+  <script src="{% static 'js/lightcase.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.countup.min.js' %}"></script>
+  <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+        <!-- START: Page JS-->
+        <script src="{% static 'js/dashboard_js/home.script.js' %}"></script>
+        <!-- END: Page JS-->
+    </body>
+    <!-- END: Body-->
+
+<!-- Mirrored from html.designstream.co.in/liner/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 22:22:30 GMT -->
+</html>

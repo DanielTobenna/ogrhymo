@@ -1,0 +1,68 @@
+  {% load static %}
+  <!--  header-section start  -->
+  <header class="header-section header--fixed">
+    <div class="header-top">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-md-6">
+            <div class="header-top-left d-flex">
+              <div class="support-part">
+                  <a href="tel:"><i class="fa fa-headphones"></i>Support</a>
+              </div>
+              <div class="email-part">
+                  <a href="mailto:support@NSBinvest.com"><i class="fa fa-envelope"></i>customercare@nsbinvest.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+              <div class="header-top-right d-flex align-items-center justify-content-end">
+                  <div class="language-part">
+                    <i class="fa fa-globe"></i>
+                    <select>
+                        <option>Eng</option>
+                        <option>Ban</option>
+                        <option>Rus</option>
+                        <option>Arb</option>
+                    </select>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
+           <a class="navbar-brand" href="{% url 'home' %}" style="color: #641ED1;"><i><b>NSB investments</b></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="menu-toggle"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav main-menu ml-auto">
+              <li class="active menu_has_children"><a href="{% url 'home' %}">Home</a>
+              <ul class="sub-menu">
+                  <li><a href="{% url 'loginpage' %}">Login</a></li>
+                  <li><a href="{% url 'signup' %}">Create account</a></li>
+                  <li><a href="{% url 'promotion' %}">Promotions</a></li>
+              </ul>
+              </li>
+              <li><a href="{% url 'about' %}">about</a></li>
+
+              <li class="menu_has_children"><a href="{% url 'dashboard' %}">Dashboard</a>
+                <ul class="sub-menu">
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </li>
+
+              <li><a href="{% url 'loginpage' %}">Login</a></li>
+              <li><a href="{% url 'contact' %}">contact us</a></li>
+          </ul>
+            <div class="header-join-part">
+              <button type="button" class="btn btn-primary btn-hover"><a href="{% url 'signup' %}">join us</a></button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div><!-- header-bottom end -->
+  </header>
+  <!--  header-section end  -->

@@ -1,0 +1,92 @@
+  <!-- footer-section start -->
+  {% load static %}
+  <footer class="footer-section">
+    <div class="footer-top bg_img" data-background="{% static 'images/footer-bg.png' %}">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-header text-white text-center">
+              <span class="section-subtitle">Subscribe us</span>
+              <h2 class="section-title">For Newsletter</h2>
+              <p>Join 14,000+ satisfied Fast Invest customers! <a href="{% url 'signup' %}">Register</a> and Subscribe to our newsletter to receive all the latest news and updates. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="subscribe-wrapper">
+              <span class="icon wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="{% static 'images/icons/subscribe.png' %}" alt="icon"></span>
+              <form class="subscribe-form">
+                <input type="text" name="subs_name" id="subs_name" placeholder="Your Email Address">
+                <button type="submit" class="subs-btn">subscribe<span class="btn-icon"><img src="{% static 'images/icons/paper-plane.png' %}" alt="icon"></span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-none-30">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">About NSB investments</h3>
+              <ul class="footer-menu-list">
+                <li><a href="{% url 'about' %}">About us</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">My Account</h3>
+              <ul class="footer-menu-list">
+                <li><a href="{% url 'dashboard' %}">Manage Your Account</a></li>
+                <li><a href="{% url 'dashboard' %}">Deposit</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">help center</h3>
+              <ul class="footer-menu-list">
+                <li><a href="{% url 'contact' %}">Investor help centre</a></li>
+                <li><a href="{% url 'contact' %}">Entrepreneur help centre</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="btn-area text-center">
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="{% static 'images/buttons/google.png' %}" alt="button"></a>
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.7s" data-wow-delay="0.5s"><img src="{% static 'images/buttons/apple.png' %}" alt="button"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="copy-right-text text-md-left text-center mb-md-0 mb-3">Copyright © 2019-2021.All Rights Reserved By <a href="{% url 'home' %}">NSB investments</a></p>
+          </div>
+          <div class="col-md-6">
+            <div class="card-list text-md-right text-center">
+              <a href="#0"><img src="{% static 'images/icons/card-options/americanexpress.png' %}" alt="image"></a>
+              <a href="#0"><img src="{% static 'images/icons/card-options/maestro.png' %}" alt="image"></a>
+              <a href="#0"><img src="{% static 'images/icons/card-options/visa.png' %}" alt="image"></a>
+              <a href="#0"><img src="{% static 'images/icons/card-options/paypal.png' %}" alt="image"></a>
+              <a href="#0"><img src="{% static 'images/icons/card-options/mastercard.png' %}" alt="image"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-section end -->
+
+  <!-- scroll-to-top start -->
+  <div class="scroll-to-top">
+    <span class="scroll-icon">
+      <i class="fa fa-rocket"></i>
+    </span>
+  </div>
+  <!-- scroll-to-top end -->
